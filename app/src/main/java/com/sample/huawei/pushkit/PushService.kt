@@ -25,11 +25,10 @@ class PushService: HmsMessageService() {
     override fun onMessageReceived(message: RemoteMessage?) {
         super.onMessageReceived(message)
         Log.i(TAG, "onMessageReceived() data: ")
-        message!!.dataOfMap.let {
+        message?.dataOfMap?.let {
             for (data in it) {
                 Log.i(TAG, "key: ${data.key} - value: ${data.value};")
             }
         }
     }
-
 }
