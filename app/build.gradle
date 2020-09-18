@@ -18,10 +18,10 @@ android {
 
     signingConfigs {
         release {
-            storeFile file("GitHubImprovments.jks")
-            storePassword "GitHubImprovments"
-            keyAlias "GitHubImprovments"
-            keyPassword "GitHubImprovments"
+            storeFile file("HuaweiSampleKey.jks")
+            storePassword "HuaweiSampleKey"
+            keyAlias "HuaweiSampleKey"
+            keyPassword "HuaweiSampleKey"
             v1SigningEnabled true
             v2SigningEnabled true
         }
